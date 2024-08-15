@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <script src="https://kit.fontawesome.com/3543404fbb.js" crossorigin="anonymous"></script> -->
+    </head>
+    <body>
+        <div class="body" id="kit">
+            <div class="screen" id="display">
+                <input type="text" class="display" id="displaier">
+                <input type="text" class="display1" id="solution">
+            </div>
+            <div class="nums" id="btns">
+                <input type="button" value="AC" class="btnum" onclick="displaier.value='',solution.value=''"/>
+                <input type="button" value="DE" class="btnum" onclick="displaier.value=displaier.value.toString().slice(0,-1)"/>
+                <input type="button" value="." class="btnum" onclick="displaier.value+='.'"/>
+                <input type="button" value="1" class="btnum" onclick="displaier.value+='1'"/>
+                <input type="button" value="2" class="btnum" onclick="displaier.value+='2'"/>
+                <input type="button" value="3" class="btnum" onclick="displaier.value+='3'"/>
+                <input type="button" value="4" class="btnum" onclick="displaier.value+='4'"/>
+                <input type="button" value="5" class="btnum" onclick="displaier.value+='5'"/>
+                <input type="button" value="6" class="btnum" onclick="displaier.value+='6'"/>
+                <input type="button" value="7" class="btnum" onclick="displaier.value+='7'"/>
+                <input type="button" value="8" class="btnum" onclick="displaier.value+='8'"/>
+                <input type="button" value="9" class="btnum" onclick="displaier.value+='9'"/>
+                <input type="button" value="0" class="btnum" onclick="displaier.value+='0'"/>
+            </div>
+            <div class="ops" id="opbtn">
+                <input type="button" value="+" class="btnop" onclick="displaier.value+='+'"/>
+                <input type="button" value="-" class="btnop" onclick="displaier.value+='-'"/>
+                <input type="button" value="*" class="btnop" onclick="displaier.value+='*'"/>
+                <input type="button" value="/" class="btnop" onclick="displaier.value+='/'"/>
+                <input type="button" value="=" class="btnop" onclick="solution.value=eval(displaier.value)" id="equal"/>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family:cursive;
+}
+body{
+    background-color: black;
+}
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 375px;
+    height: 410px;
+    /* border: blueviolet 2px solid;/ */
+    margin: 9% 520px;
+    border-radius: 25px;
+    box-shadow: 8px 6px 20px #ffffff3d;
+}
+.screen{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 375px;
+    height: 20%;
+    background: aquamarine;
+    border-radius: 25px 25px 0px 0px;
+}
+.display {
+    width: 350px;
+    height: 33px;
+    border: none;
+    border-radius: 15px 15px 0px 0px;
+    font-size: 25px;
+}
+.display1{
+    width: 350px;
+    height: 25px;
+    border: none;
+    font-size: 23px;
+}
+.nums{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 80%;
+    background: teal;
+    border-radius: 0px 0px 0px 25px;
+}
+.btnum{
+    margin: 10px;
+    height: 46px;
+    width: 47px;
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+    font-size: 28px;
+    box-shadow: -13px 4px 20px #003b30;
+}
+.btnum:active{
+    box-shadow: none;
+}
+.ops{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 80%;
+    background: turquoise;
+    border-radius: 0px 0px 25px 0px;
+}
+.btnop{
+    margin: 7px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+    font-size: 28px;
+    box-shadow: -13px 4px 20px #0b8f76;
+}
+
+.btnop:active{
+    box-shadow: none;
+}
